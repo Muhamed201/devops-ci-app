@@ -8,7 +8,7 @@ def create_app():
 
     @application.get("/health")
     def health():
-        return jsonify(status="unhealthy")
+        return jsonify(status="ok")
 
     @application.get("/")
     def index():
